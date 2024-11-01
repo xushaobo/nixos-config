@@ -165,6 +165,25 @@
     terminal = "screen-256color";
   };
 
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    extraLuaConfig = ''
+      vim.opt.relativenumber = true
+    '';
+    extraLuaPackages = luaPkgs: with luaPkgs; [ ];
+    extraPackages = [ ];
+    extraPython3Packages = pyPkgs: with pyPkgs; [ ];
+    plugins = with pkgs.vimPlugins; [
+      vim-nix
+      {
+        plugin = vim-startify;
+        config = "let g:startify_change_to_vcs_root = 0";
+      }
+    ];
+    withNodeJs = false;
+  };
+
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new Home Manager release introduces backwards
