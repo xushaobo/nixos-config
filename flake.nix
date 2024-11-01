@@ -54,5 +54,17 @@
           nixpkgs-fmt # TODO replace it with nixfmt-rfc-style
         ];
       };
+    templates = {
+      # usage:
+      #   mkdir /a/new/project && cd /a/new/project
+      #   nix flake init -t /path/to/this/flake#rust
+      #   nix develop .#
+      #   cargo init
+      #   cargo run
+      rust = {
+        path = ./templates/rust;
+        description = "A basic Rust development environment";
+      };
+    };
   };
 }
