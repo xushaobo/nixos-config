@@ -21,10 +21,10 @@
   # '';
 
   # 设置鼠标指针大小以及字体 DPI（适用于 4K 显示器）
-#  xresources.properties = {
-#    "Xcursor.size" = 16;
-#    "Xft.dpi" = 172;
-#  };
+  #  xresources.properties = {
+  #    "Xcursor.size" = 16;
+  #    "Xft.dpi" = 172;
+  #  };
 
   # 通过 home.packages 安装一些常用的软件
   # 这些软件将仅在当前用户下可用，不会影响系统级别的配置
@@ -50,23 +50,23 @@
     # networking tools
     mtr # A network diagnostic tool
     iperf3
-    dnsutils  # `dig` + `nslookup`
+    dnsutils # `dig` + `nslookup`
     ldns # replacement of `dig`, it provide the command `drill`
     aria2 # A lightweight multi-protocol & multi-source command-line download utility
     socat # replacement of openbsd-netcat
     nmap # A utility for network discovery and security auditing
-    ipcalc  # it is a calculator for the IPv4/v6 addresses
+    ipcalc # it is a calculator for the IPv4/v6 addresses
 
     # misc
-#    cowsay
-#    file
-#    which
-#    tree
-#    gnused
-#    gnutar
-#    gawk
-#    zstd
-#    gnupg
+    #    cowsay
+    #    file
+    #    which
+    #    tree
+    #    gnused
+    #    gnutar
+    #    gawk
+    #    zstd
+    #    gnupg
 
     # nix related
     #
@@ -78,7 +78,7 @@
     hugo # static site generator
     glow # markdown previewer in terminal
 
-    btop  # replacement of htop/nmon
+    btop # replacement of htop/nmon
     iotop # io monitoring
     iftop # network monitoring
 
