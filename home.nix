@@ -158,6 +158,13 @@
     };
   };
 
+  programs.tmux = {
+    enable = true;
+    baseIndex = 1;
+    clock24 = true;
+    terminal = "screen-256color";
+  };
+
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new Home Manager release introduces backwards
